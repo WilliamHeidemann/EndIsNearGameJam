@@ -25,7 +25,7 @@ public class MushroomVisualEffectsController : MonoBehaviour
         UpdateChromaticAberration();
         UpdateLensDistortion();
     }
-
+    
     private void UpdateVignette()
     {
         var a = mushroom.value;

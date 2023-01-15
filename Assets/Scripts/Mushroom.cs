@@ -13,12 +13,11 @@ public class Mushroom : MonoBehaviour, IInteractable
     private void Start()
     {
         _controller = MushroomHighController.Instance;
-        Strength = Random.value * 0.2f + 0.1f;
     }
 
     public void Interact()
     {
         StartCoroutine(_controller.ConsumeMushroom(Strength));
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }

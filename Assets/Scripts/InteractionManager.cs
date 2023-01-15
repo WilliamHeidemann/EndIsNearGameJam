@@ -24,7 +24,6 @@ public class InteractionManager : MonoBehaviour
             .FirstOrDefault();
         if (nearestCollider is null) return;
         _nearest = nearestCollider.gameObject;
-        _nearest.GetComponent<MeshRenderer>().material.color = Color.red;
         
         if (Input.GetKeyDown(KeyCode.E))
         {

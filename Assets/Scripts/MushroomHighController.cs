@@ -15,6 +15,7 @@ public class MushroomHighController : MonoBehaviour
 
     private void Start()
     {
+        high.value = 0f;
         StartCoroutine(SoberUp());
     }
 
